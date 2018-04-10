@@ -1,0 +1,37 @@
+{
+  "name": "studio-fww_site",
+  "version": "1.0.0",
+  "description": "Website for Studio FWW",
+  "main": "./source/javascripts/site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
+  },
+  "author": "Frederick Wells",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "postcss": "^6.0.14",
+    "postcss-loader": "^2.0.9",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "html-webpack-exclude-assets-plugin": "^0.0.5",
+    "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
+    "purecss-sass": "^1.0.0"
+  }
+}
